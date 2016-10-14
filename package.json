@@ -1,0 +1,29 @@
+{
+  "name": "pdiffer",
+  "version": "0.1.0",
+  "description": "Node module and CLI tool for perceptual differentiation",
+  "bin": {
+    "pdiff": "./bin/pdiff.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:bin && npm run test:src",
+    "test:bin": "mocha bin --opts mocha.opts",
+    "test:src": "mocha src --opts mocha.opts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^1.1.0",
+    "canvas": "^1.5.0",
+    "commander": "^2.9.0",
+    "imagediff": "^1.0.8",
+    "pkgcloud": "^1.3.0",
+    "unzip": "^0.1.11"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6"
+  }
+}
